@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <!-- 🔥 PREMIUM FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <title>AI Arena</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #020617, #000);
+      color: white;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      color: #38bdf8;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    button {
+      background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+      border: none;
+      padding: 12px 24px;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #38bdf8;
+    }
+
+    textarea {
+      width: 100%;
+      height: 100px;
+      margin-top: 15px;
+      padding: 12px;
+      border-radius: 10px;
+      border: none;
+      font-size: 14px;
+    }
+
+    .card {
+      background: rgba(30, 41, 59, 0.5);
+      padding: 20px;
+      border-radius: 15px;
+      margin-top: 20px;
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+    }
+
+    .round {
+      color: #facc15;
+      font-weight: bold;
+    }
+
+    .attack-card {
+      margin-top: 15px;
+      padding: 15px;
+      border-left: 4px solid #f87171;
+      background: rgba(248, 113, 113, 0.05);
+    }
+
+    .score {
+      color: #4ade80;
+      font-size: 1.3rem;
+    }
+
+    .progress-bar {
+      height: 8px;
+      background: #1e293b;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+
+    .progress {
+      height: 100%;
+      background: linear-gradient(to right, red, yellow, green);
+      transition: width 0.4s;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>⚔️ AI ARENA</h1>
+
+  <button id="startBtn">ENTER ARENA</button>
+
+  <div id="scenario" class="card"></div>
+
+  <textarea id="solution" placeholder="Deploy your strategy..."></textarea>
+  <button id="submitBtn">ATTACK</button>
+
+  <!-- 🔥 MULTI-ROUND OUTPUT -->
+  <div id="battleLog"></div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
